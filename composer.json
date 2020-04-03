@@ -1,0 +1,18 @@
+{
+    "require": {
+        "ext-curl": "*",
+        "ext-json": "*",
+        "telegram-bot/api": "^2.3",
+        "symfony/dom-crawler": "^4.4",
+        "guzzlehttp/guzzle": "^6.5",
+        "vlucas/phpdotenv": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "src\\": "src",
+            "public\\": "public",
+            "Exchanger\\": "src/Exchanger",
+            "Component\\": "src/Component"
+        }
+    }
+}
