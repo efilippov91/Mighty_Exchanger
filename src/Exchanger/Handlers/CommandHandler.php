@@ -18,14 +18,14 @@ class CommandHandler
      *
      * @var \TelegramBot\Api\Client
      */
-    public $botClient;
+    private $botClient;
 
     /**
      * Все курсы валют
      *
      * @var string
      */
-    public $rates;
+    private $rates;
 
     public function __construct(Client $botClient)
     {
@@ -87,7 +87,7 @@ class CommandHandler
      * @param $rates
      * @return string
      */
-    public function buildExchangeData($rates): string
+    private function buildExchangeData($rates): string
     {
         $rebuildData = [];
         foreach ($rates as $name =>$data) {

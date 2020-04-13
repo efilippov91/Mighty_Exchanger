@@ -11,7 +11,7 @@ class MainKeyboard
      * Массив с кнопками
      * @var array
      */
-    public $mainButtons = [[
+    private $mainButtons = [[
         [
             'text'          => Dictionary::GET_EXCHANGE_MAIN_BUTTON['text'],
             'callback_data' => Dictionary::GET_EXCHANGE_MAIN_BUTTON['callback_data'],

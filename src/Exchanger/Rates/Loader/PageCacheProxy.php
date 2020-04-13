@@ -8,9 +8,9 @@ use Memcached;
 
 class PageCacheProxy implements PageDownloaderInterface
 {
-    public $memcached;
+    private $memcached;
 
-    public $downloader;
+    private $downloader;
 
     /**
      * PageCacheProxy constructor.

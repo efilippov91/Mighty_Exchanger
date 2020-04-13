@@ -14,7 +14,7 @@ class PopCurrKeyboard
      *
      * @var array
      */
-    public $popCurrButtons = [
+    private $popCurrButtons = [
         [[
             'text'          => Dictionary::EUR_BUTTON['name'],
             'callback_data' => Dictionary::EUR_BUTTON['abbr']
